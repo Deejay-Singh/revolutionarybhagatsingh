@@ -4,16 +4,16 @@
  * Generic CSS for CakePHP
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @copyright     Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
  * @link          http://cakephp.org CakePHP(tm) Project
  * @package       app.webroot.css
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @since         CakePHP(tm)
+ * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
 * {
@@ -736,4 +736,14 @@ pre {
 /** Elements **/
 #url-rewriting-warning {
 	display:none;
+}
+.navbar-inner {
+background-color: #554236;
+background-image: -moz-linear-gradient(top,#554236,#443125);
+background-image: -ms-linear-gradient(top,#554236,#443125);
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#554236),to(#443125));
+background-image: -webkit-linear-gradient(top,#554236,#443125);
+background-image: -o-linear-gradient(top,#554236,#443125);
+background-image: linear-gradient(top,#554236,#443125);
+filter: progid:dximagetransform.microsoft.gradient(startColorstr='#554236',endColorstr='#443125',GradientType=0);
 }
