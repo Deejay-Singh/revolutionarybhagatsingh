@@ -107,3 +107,13 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+function dump( $var ) {
+    echo '<pre>';
+    if( is_object( $var ) || is_array( $var ) ) {
+        print_r( $var );
+    } else {
+        echo $var;
+    }
+    echo '</pre>';
+}
