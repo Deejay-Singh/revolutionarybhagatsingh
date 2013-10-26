@@ -38,7 +38,7 @@ class AppController extends Controller {
 		$email = new CakeEmail($provider);
 		$email->viewVars(array('var' => $var ));
 		$email->template($template)->emailFormat( 'html' )->to( $to )->from( $fromEmail, $fromName )->subject( $subject )->replyTo( $replyToEmail, $replyToName );
-		if( !$email->sent() ) $success = "Error sending mail";
+		if( !$email->send() ) $success = "Error sending mail";
 		return $success;
 	}
 	
