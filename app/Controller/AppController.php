@@ -21,7 +21,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 App::uses('Controller', 'Controller');
-
+App::uses('CakeEmail', 'Network/Email');
 /**
  * Application Controller
  *
@@ -33,4 +33,13 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 	public $components      = array( 'Session', 'Cookie', 'RequestHandler' );
+	
+	public function sendMail( $provider = 'mandrill', $success = 'sent', $var = null, $template = null, $to = null, $from = array( 'admin@revolutionarybhagatsingh.com', 'Bhagat Singh' ), $subject = null, $replyTo = array( 'reply@revolutionarybhagatsingh.com', 'Bhagat Singh' ) ) {
+		$email = new CakeEmail($provider);
+		$email->viewVars(array('var' => $var ));
+		$email->template($template)->emailFormat( 'html' )->to( $to )->from( $from )->subject( $subject )->replyTo( $replyTo );
+		if( !$email->sent() ) $success = "Error sending mail";
+		return $success;
+	}
+	
 }

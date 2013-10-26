@@ -88,5 +88,19 @@ class EmailConfig {
 		//'charset' => 'utf-8',
 		//'headerCharset' => 'utf-8',
 	);
+	
+	public $mandrill = array(
+        'transport' => 'Smtp',
+        'from' => array('admin@revolutionarybhagatsingh.com' => 'Bhagat Singh'),
+        'host' => 'smtp.mandrillapp.com',
+        'port' => 587,
+        'timeout' => 30,
+        'username' => 'daljeet.working@gmail.com',
+        'password' => 'Pm-Sxe12RCMIfWWbU5e8fg',
+        'client' => null,
+        'log' => false,
+        //'charset' => 'utf-8',
+        //'headerCharset' => 'utf-8',
+    );
 
 }
