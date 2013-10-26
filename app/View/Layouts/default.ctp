@@ -33,7 +33,7 @@ $cakeDescription = __d('cake_dev', 'Life and ideas of Revolutionary Bhagat Singh
     <?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
-<?php if( $_SERVER['SERVER_NAME'] == 'www.revolutionarybhagatsingh.com' ) { ?>
+<?php if( $_SERVER['HTTP_HOST'] == 'www.revolutionarybhagatsingh.com' ) { ?>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
