@@ -34,10 +34,10 @@ App::uses('CakeEmail', 'Network/Email');
 class AppController extends Controller {
 	public $components      = array( 'Session', 'Cookie', 'RequestHandler' );
 	
-	public function sendMail( $provider = 'mandrill', $success = 'sent', $var = null, $template = null, $to = null, $from = array( 'admin@revolutionarybhagatsingh.com', 'Bhagat Singh' ), $subject = null, $replyTo = array( 'reply@revolutionarybhagatsingh.com', 'Bhagat Singh' ) ) {
+	public function sendMail( $provider = 'mandrill', $success = 'sent', $var = null, $template = null, $to = null, $fromEmail = 'admin@revolutionarybhagatsingh.com', $fromName = 'Bhagat Singh', $subject = null, $replyToEmail = 'reply@revolutionarybhagatsingh.com', $replyToName = 'Bhagat Singh' ) {
 		$email = new CakeEmail($provider);
 		$email->viewVars(array('var' => $var ));
-		$email->template($template)->emailFormat( 'html' )->to( $to )->from( $from )->subject( $subject )->replyTo( $replyTo );
+		$email->template($template)->emailFormat( 'html' )->to( $to )->from( $fromEmail, $fromName )->subject( $subject )->replyTo( $replyToEmail, $replyToName );
 		if( !$email->sent() ) $success = "Error sending mail";
 		return $success;
 	}

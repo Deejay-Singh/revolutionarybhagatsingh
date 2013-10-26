@@ -20,7 +20,7 @@ class FeedbacksController extends AppController {
 		} else {
 			$subscribe['Subscribe']['from'] = $_SERVER['REMOTE_ADDR'];
 			$this->Subscribe->save($subscribe);
-			$this->sendMail( 'mandrill', 'sent', null , 'subscribe', $subscribe['Subscribe']['email'], array( 'admin@revolutionarybhagatsingh.com', 'Bhagat Singh' ), 'Thank You for Subcribing to the Revolution of Shaheed Bhagat Singh', array( 'reply@revolutionarybhagatsingh.com', 'Bhagat Singh' ) );
+			$this->sendMail( 'mandrill', 'sent', null , 'subscribe', $subscribe['Subscribe']['email'], 'admin@revolutionarybhagatsingh.com', 'Bhagat Singh', 'Thank You for Subcribing to the Revolution of Shaheed Bhagat Singh', 'reply@revolutionarybhagatsingh.com', 'Bhagat Singh' );
 			$this->Session->setFlash(__('Well done! You successfully subscribed. '), 'default', array( 'class' => 'alert alert-success' ) );
             $this->redirect( $this->referer() );
 		}
