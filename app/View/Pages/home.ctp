@@ -17,6 +17,7 @@
 	<img src="<?php echo $this->webroot . 'img/sign.jpeg' ?>" width="250" height="250" alt="" />
 </div>
 <?php echo $this->element('feedback'); ?>
+<?php echo $this->element('advertisment'); ?>
 <script>
 	jQuery('#submitButton').pointPoint();
 </script>
