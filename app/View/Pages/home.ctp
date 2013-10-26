@@ -10,10 +10,13 @@
     <form class="form-search" method="post" action="/feedbacks/subscribe">
 		<span class="text-info" >Stay Informed</span>
 		<input name="email" type="email" placeholder="Enter email" class="input-large search-query" required >
-		<button type="submit" class="btn btn-primary">Submit</button>
+		<button type="submit" id ='submitButton' class="btn btn-primary">Submit</button>
     </form>
 </div>
 <div style="float:right">
 	<img src="<?php echo $this->webroot . 'img/sign.jpeg' ?>" width="250" height="250" alt="" />
 </div>
-<?php echo $this->element('feedback');
+<?php echo $this->element('feedback'); ?>
+<script>
+	jQuery('#submitButton').pointPoint();
+</script>

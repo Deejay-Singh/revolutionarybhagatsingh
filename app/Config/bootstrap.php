@@ -117,3 +117,5 @@ function dump( $var ) {
     }
     echo '</pre>';
 }
+
+CakePlugin::load('Facebook');

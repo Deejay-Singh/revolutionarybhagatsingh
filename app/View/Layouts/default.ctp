@@ -14,10 +14,10 @@ $cakeDescription = __d('cake_dev', 'Life and ideas of Revolutionary Bhagat Singh
 	<?php
 		echo $this->Html->meta(array("name"=>"viewport","content"=>"width=device-width,  initial-scale=1.0"));
         echo $this->Html->meta('icon');
-        echo $this->Html->css( array('bootstrap', 'bootstrap-responsive', 'comb', 'style', 'style-responsive', 'feedback-style' ) );
+        echo $this->Html->css( array('bootstrap', 'bootstrap-responsive', 'comb', 'style', 'style-responsive', 'feedback-style', 'jquery.pointpoint' ) );
         echo $this->fetch('meta');
         echo $this->fetch('css');
-        echo $this->Html->script( array( 'jquery.min', 'modernizr.min', 'bootstrap.min', 'jquery.validate', 'jquery.validate.min', 'jquery-ui.min', 'common') );
+        echo $this->Html->script( array( 'jquery.min', 'modernizr.min', 'bootstrap.min', 'jquery.validate', 'jquery.validate.min', 'jquery-ui.min', 'jquery.pointpoint', 'transform' ) );
         echo $this->fetch('script');
 	?>
 </head>
