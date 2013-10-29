@@ -14,6 +14,10 @@ class FeedbacksController extends AppController {
 	
 	public function subscribe() {
 		$subscribe['Subscribe'] = $this->data;
+		if( $subscribe['Subscribe']['email'] == '' ) {
+			$this->Session->setFlash(__('Hey! You forgot to mention your email id. '), 'default', array( 'class' => 'alert alert-error' ) );
+            $this->redirect( $this->referer() );
+		}
 		if( $this->exist( $subscribe['Subscribe']['email'] ) ) {
 			$this->Session->setFlash(__('Heads up! You are already subscribed. '), 'default', array( 'class' => 'alert alert-info' ) );
             $this->redirect( $this->referer() );
