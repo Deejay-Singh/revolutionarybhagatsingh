@@ -118,4 +118,16 @@ function dump( $var ) {
     echo '</pre>';
 }
 
+function myRand($min, $max, $quantity = 1 ) {
+    $numbers = range($min, $max);
+    shuffle($numbers);
+    $return = array_slice($numbers, 0, $quantity);
+    if( $quantity == '1' ) $return = $return[0];
+    return $return;
+}
+
 CakePlugin::load('Facebook');
+
+define( 'MOOD_HAPPY', 1 );
+define( 'MOOD_OK', 2 );
+define( 'MOOD_UNHAPPY', 3 );

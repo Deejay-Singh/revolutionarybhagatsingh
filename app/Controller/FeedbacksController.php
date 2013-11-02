@@ -9,6 +9,8 @@ class FeedbacksController extends AppController {
 		$feedback['Feedback'] = $this->data;
 		$feedback['Feedback']['from'] = $_SERVER['REMOTE_ADDR'];
 		$this->Feedback->save($feedback);
+		$var['name'] = $feedback['Feedback']['name'];
+		$this->sendMail( 'mandrill', 'sent', $var , 'feedback', $feedback['Feedback']['email'], 'admin@revolutionarybhagatsingh.com', 'Bhagat Singh', 'Thank you for your valuable feedback', 'reply@revolutionarybhagatsingh.com', 'Bhagat Singh' );
 		exit;
 	}
 	
