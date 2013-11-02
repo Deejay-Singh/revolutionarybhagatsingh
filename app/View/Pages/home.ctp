@@ -66,7 +66,7 @@
 			Tell Your Friends about us!
 		</h2>
 		<p>
-			Just Copy paste the link below to your favourite social websit, or mail it to your friends.
+			Just Copy paste the link below to your favourite social website, or mail it to your friends.
 		</p>
 		<div class="well">
 			<p>
