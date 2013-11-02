@@ -6,7 +6,7 @@ class QuotesController extends AppController {
 	public $uses = array( 'Quotes' );
 	
 	public function index() {
-		$this->Quotes->find('all');
+		//$this->Quotes->find('all');
 	}
 	
 	public function add() {
