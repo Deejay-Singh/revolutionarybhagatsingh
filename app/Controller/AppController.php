@@ -39,7 +39,7 @@ class AppController extends Controller {
 	public function sendMail( $provider = 'mandrill', $success = 'sent', $var = null, $template = null, $to = null, $fromEmail = 'admin@revolutionarybhagatsingh.com', $fromName = 'Bhagat Singh', $subject = null, $replyToEmail = 'reply@revolutionarybhagatsingh.com', $replyToName = 'Bhagat Singh' ) {
 		$email = new CakeEmail($provider);
 		$email->viewVars(array('var' => $var ));
-		$email->template($template)->emailFormat( 'html' )->to( $to )->from( $fromEmail, $fromName )->subject( $subject )->replyTo( $replyToEmail, $replyToName );
+		$email->template($template)->emailFormat( 'html' )->to( $to )->from( $fromEmail, $fromName )->subject( $subject )->replyTo( 'admin@revolutionarybhagatsingh.com', $replyToName );
 		if( !$email->send() ) $success = "Error sending mail";
 		return $success;
 	}
