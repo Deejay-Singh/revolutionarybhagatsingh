@@ -73,5 +73,16 @@
 				<a href="http://goo.gl/NbJ6jQ" target="_blank">http://goo.gl/NbJ6jQ</a>
 			</p>
 		</div>
+		<div>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- bhagat singh -->
+			<ins class="adsbygoogle"
+				 style="display:inline-block;width:300px;height:250px"
+				 data-ad-client="ca-pub-2975900601170770"
+				 data-ad-slot="1679334843"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
 	</div>
 </div>
