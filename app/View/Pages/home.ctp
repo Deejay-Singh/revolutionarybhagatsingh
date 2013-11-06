@@ -2,7 +2,7 @@
 	<div class="span8">
 		<div class="well">
 			<h1>
-				Bhagat Singh ( 28 September 1907 to 23 March 1931 )
+				Bhagat Singh (28 September 1907 - 23 March 1931)
 			</h1>
 			<p>
 				Bhagat Singh was an Indian socialist considered to be one of the most influential revolutionaries of the Indian independence movement.

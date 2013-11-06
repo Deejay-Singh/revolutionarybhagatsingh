@@ -4,7 +4,7 @@
 		</h2>
 		<form class="form-search" method="post" action="/feedbacks/subscribe">
 			<input name="email" type="email" placeholder="Enter email" class="input-large search-query" required >
-			<button type="submit" id ='submitButton' class="btn btn-primary">Submit</button>
+			<button type="submit" id ='submitButtons' class="btn btn-primary">Submit</button>
 		</form>
 		<h3>
 			Feedback
