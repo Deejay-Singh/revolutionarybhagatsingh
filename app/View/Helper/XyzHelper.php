@@ -49,17 +49,18 @@ class XyzHelper extends AppHelper {
     }
 
     public function home( $controller = 'pages', $action = 'home', $param = null ) {
+		//$this->Html->url('/'. $controller . '/' . $action ', true);
         if( !$param )
-            return $this->Html->url( array( 'controller' => $controller, 'action' => $action ) );
+            return $this->Html->url( array( 'controller' => $controller, 'action' => $action) );
         else 
-            return $this->Html->url( array( 'controller' => $controller, 'action' => $action, $param ) );
+            return $this->Html->url( array( 'controller' => $controller, 'action' => $action, 'ext' => 'html', $param ) );
     }
     
     public function u( $controller = null, $action = 'index', $param = null ) {
         if( !$param )
-            return $this->Html->url( array( 'controller' => $controller, 'action' => $action ) );
+            return $this->Html->url( array( 'controller' => $controller, 'action' => $action, 'ext' => 'html' ) );
         else 
-            return $this->Html->url( array( 'controller' => $controller, 'action' => $action, $param ) );
+            return $this->Html->url( array( 'controller' => $controller, 'action' => $action, 'ext' => 'html', $param ) );
     }
 
 }

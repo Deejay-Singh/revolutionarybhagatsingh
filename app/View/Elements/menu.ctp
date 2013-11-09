@@ -1,14 +1,14 @@
 <div class="navbar">
 	<div class="navbar-inner">
 		<div class="container-fluid">
-			 <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a> <a href="#" class="brand">Bhagat Singh</a>
+			 <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a> <a href="<?php echo $this->Xyz->home();?>" class="brand">Bhagat Singh</a>
 			<div class="nav-collapse collapse navbar-responsive-collapse">
 				<ul class="nav">
 					<li class="active">
 						<a href="<?php echo $this->Xyz->home();?>">Home</a>
 					</li>
 					<li>
-						<a href="<?php echo $this->Xyz->u('images', 'index');?>">Gallery</a>
+						<a href="<?php echo $this->Xyz->u('images', 'all');?>">Gallery</a>
 					</li>
 					<li>
 						<a href="#submitArticle" class="article-call" role="button" data-toggle="modal" >Submit Article</a>

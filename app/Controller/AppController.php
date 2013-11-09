@@ -22,6 +22,7 @@
  */
 App::uses('Controller', 'Controller');
 App::uses('CakeEmail', 'Network/Email');
+App::uses('Sanitize', 'Utility');
 /**
  * Application Controller
  *
@@ -33,7 +34,7 @@ App::uses('CakeEmail', 'Network/Email');
  */
 class AppController extends Controller {
 	
-	public $components      = array( 'Session', 'Cookie', 'RequestHandler' );
+	public $components      = array( 'Session', 'Cookie', 'RequestHandler', 'Xyz' );
 	public $helpers = array('Facebook.Facebook', 'Xyz');
 	
 	public function sendMail( $provider = 'mandrill', $success = 'sent', $var = null, $template = null, $to = null, $fromEmail = 'admin@revolutionarybhagatsingh.com', $fromName = 'Bhagat Singh', $subject = null, $replyToEmail = 'reply@revolutionarybhagatsingh.com', $replyToName = 'Bhagat Singh' ) {
