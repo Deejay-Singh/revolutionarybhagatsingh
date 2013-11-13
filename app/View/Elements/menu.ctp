@@ -13,6 +13,9 @@
 					<li>
 						<a href="#submitArticle" class="article-call" role="button" data-toggle="modal" >Submit Article</a>
 					</li>
+					<li>
+						<a href="<?php echo $this->Xyz->u('article', 'finalHour');?>" role="button" >Article From Users</a>
+					</li>
 					<li class="dropdown">
 						 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Quotes<strong class="caret"></strong></a>
 						<ul class="dropdown-menu">

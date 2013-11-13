@@ -4,6 +4,7 @@
 	
 	Router::connect('/', array('controller' => 'pages', 'action' => 'home'));
 	
+	Router::connect('/article/bhagat-singh-final-hours', array('controller' => 'article', 'action' => 'finalHour'));
 	Router::connect('/gallery/bhagat-singh-images-all', array('controller' => 'images', 'action' => 'all'));
 	Router::connect('/image/*', array('controller' => 'images', 'action' => 'index'));
 	

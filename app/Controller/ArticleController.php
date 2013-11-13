@@ -18,4 +18,8 @@ class ArticleController extends AppController {
 		exit;
 	}
 	
+	public function finalHour() {
+		
+	}
+	
 }
