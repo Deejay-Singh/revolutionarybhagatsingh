@@ -40,7 +40,7 @@ $cakeDescription = __d('cake_dev', 'Life and ideas of Revolutionary Bhagat Singh
         </div>
     </div><br/><br/>
     <footer class="footer"><?php echo $this->element('footer');?></footer>
-    <?php echo $this->element('sql_dump'); ?>
+    <?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>
 <?php if( $_SERVER['HTTP_HOST'] == 'www.revolutionarybhagatsingh.com' ) { ?>

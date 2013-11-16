@@ -34,8 +34,8 @@ App::uses('Sanitize', 'Utility');
  */
 class AppController extends Controller {
 	
-	public $components      = array( 'Session', 'Cookie', 'RequestHandler', 'Xyz' );
-	public $helpers = array('Facebook.Facebook', 'Xyz');
+	public $components      = array( 'Session', 'Cookie', 'RequestHandler', 'Xyz', 'DebugKit.Toolbar' );
+	public $helpers = array('Facebook.Facebook', 'Xyz', 'Gravatar');
 	
 	public function sendMail( $provider = 'mandrill', $success = 'sent', $var = null, $template = null, $to = null, $fromEmail = 'admin@revolutionarybhagatsingh.com', $fromName = 'Bhagat Singh', $subject = null, $replyToEmail = 'reply@revolutionarybhagatsingh.com', $replyToName = 'Bhagat Singh' ) {
 		$email = new CakeEmail($provider);

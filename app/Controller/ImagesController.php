@@ -6,6 +6,7 @@ App::uses('File', 'Utility');
 class ImagesController extends AppController {
 
 	public $name = 'Images';
+	public $uses = array( 'Image', 'Comment' );
 	
 	public function index( $slug = null ) {
 		$imageId = end( explode( '-', $slug ) );
@@ -16,9 +17,12 @@ class ImagesController extends AppController {
 		$prev = $this->checkImage( $prev, 'prev' );
 		$next = $this->Image->find( 'first', array( 'fields' => array( 'id', 'slug', 'name' ), 'conditions' => array( 'id' => $current['Image']['id']+1 ) ) );
 		$next = $this->checkImage( $next, 'next' );
+		$comments = $this->Comment->find( 'all', array( 'conditions' => array( 'object_type' => 'image', 'object_id' => $current['Image']['id'] ), 'order' => array('created' => -1 ) ) );
 		$this->set( 'current', $current );
 		$this->set( 'prev', $prev );
 		$this->set( 'next', $next );
+		$this->set( 'id', $current['Image']['id'] );
+		$this->set( 'comments', $comments );
 	}
 	
 	public function all() {
