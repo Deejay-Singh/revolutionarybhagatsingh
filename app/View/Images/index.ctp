@@ -41,7 +41,7 @@ $n = $next['Image']['slug'].'-'.$next['Image']['name'];
 			<?php  
 				foreach($comments as $comment) {
 			?>
-				<div id='commentId_<?php echo $comment['Comment']['id'] ?>' rel="<?php echo $comment['Comment']['user_id'] ?>" style='background-color: #f2f2f2;border: 1px solid #dddddd;border-radius:5px;margin: 12px 0;padding:10px;'>
+				<div id='commentId_<?php echo $comment['Comment']['_id'] ?>' rel="<?php echo $comment['Comment']['user_id'] ?>" style='background-color: #f2f2f2;border: 1px solid #dddddd;border-radius:5px;margin: 12px 0;padding:10px;'>
 					<div class="media">
 						<a class="pull-left" href="#">
 							<?php echo $this->Gravatar->image( $comment['Comment']['user_email'] , array('size' => 64), array( 'class' => 'media-object img-rounded' )); ?>

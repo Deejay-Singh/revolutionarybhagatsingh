@@ -6,9 +6,9 @@ App::uses('AppModel', 'Model');
  */
 class Comment extends AppModel {
     
-    //var $useDbConfig = 'mongo';
-    //public $primaryKey = '_id';
-    //public $mongoNoSetOperator = true;
+    var $useDbConfig = 'mongo';
+    public $primaryKey = '_id';
+    public $mongoNoSetOperator = true;
     
     var $commentSchema = array(
 			'user_id' => array('type'=>'int'),
