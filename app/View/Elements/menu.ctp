@@ -11,11 +11,23 @@
 						<a href="<?php echo $this->Xyz->u('images', 'all');?>">Gallery</a>
 					</li>
 					<li>
-						<a href="#submitArticle" class="article-call" role="button" data-toggle="modal" >Submit Article</a>
+						<a href="<?php echo $this->Xyz->u( 'quotes', 'index' ); ?> " role="button" >Quotes</a>
 					</li>
 					<li>
-						<a href="<?php echo $this->Xyz->u('article', 'finalHour');?>" role="button" >Article From Users</a>
+						<a href="#submitArticle" class="article-call" role="button" data-toggle="modal" >Submit an article</a>
 					</li>
+					<li class="dropdown">
+						 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Articles<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="<?php echo $this->Xyz->u( 'article', 'index', 'bhagat-singh-introduction-article' ); ?>">About Bhagat Singh</a>
+							</li>
+							<li>
+								<a href="<?php echo $this->Xyz->u('article', 'finalHour');?>">Final Hours</a>
+							</li>
+						</ul>
+					</li>
+					<!--
 					<li class="dropdown">
 						 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Quotes<strong class="caret"></strong></a>
 						<ul class="dropdown-menu">
@@ -27,7 +39,6 @@
 							</li>
 						</ul>
 					</li>
-					<!--
 					<li class="dropdown">
 						 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown<strong class="caret"></strong></a>
 						<ul class="dropdown-menu">

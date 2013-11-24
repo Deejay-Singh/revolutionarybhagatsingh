@@ -8,7 +8,7 @@
 				<div class="control-group" >
 					<label for="quote_by_name" class="control-label">Name:<font color = "red"><sup>*</sup></font></label>
 					<div class="controls">
-						<input type="text" name="quote_by_name" class="required" placeholder="Name">
+						<input type="text" name="quote_by_name" class="required" placeholder="Name" >
 					</div>
 				</div>
 				<div class="control-group" >
