@@ -19,9 +19,10 @@ class QuotesController extends AppController {
 		}
 	}
 	
-	public function view( $quote ) {
+	public function view( $quote = 'F7N695' ) {
 		$qId = end( explode(  '-', $quote ) );
 		$current = $this->Quotes->find( 'first', array( 'conditions' => array( 'q_id' => $qId ) ) );
+		if( !$current ) $this->redirect( array( 'controller' => 'quotes', 'action' => 'view' ) );
 		$neighbors = $this->Quotes->find( 'neighbors', array( 'field' => 'id', 'value' => $current['Quotes']['id'], 'conditions' => array( 'is_active' => 1 ), 'fields' => array( 'id', 'q_id' ) ) );
 		$comments = $this->Comment->find( 'all', array( 'conditions' => array( 'object_type' => 'quotes', 'object_id' => $current['Quotes']['id'] ), 'order' => array('created' => -1 ) ) );
 		$this->set( 'current', $current );
