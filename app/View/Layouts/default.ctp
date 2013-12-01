@@ -18,7 +18,7 @@ $cakeDescription = __d('cake_dev', 'Life and ideas of Revolutionary Bhagat Singh
         echo $this->Html->css( array('bootstrap', 'bootstrap-responsive.min', 'comb', 'style', 'style-responsive', 'jquery-bootstrap-feedback', 'jquery-bootstrap-feedback-ie7', 'jquery.pointpoint' ) );
         echo $this->fetch('meta');
         echo $this->fetch('css');
-        echo $this->Html->script( array( 'jquery.min', 'modernizr.min', 'bootstrap.min', 'jquery.validate.min', 'jquery-ui.min', 'jquery.pointpoint', 'transform', 'script' ,'jquery-bootstrap-feedback', 'jquery-bootstrap-article', 'jquery.lazyload.min' ) );
+        echo $this->Html->script( array( 'jquery.min', 'modernizr.min', 'bootstrap.min', 'jquery.validate.min', 'jquery-ui.min', 'jquery.pointpoint', 'transform', 'script' ,'jquery-bootstrap-feedback', 'jquery-bootstrap-article', 'jquery.lazyload.min', 'social' ) );
         echo $this->fetch('script');
 	?>
 	<script>
