@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} !^(pma|www).revolutionarybhagatsingh.com$
+RewriteRule ^(.*) http://www.revolutionarybhagatsingh.com$1 [QSA,L,R=301]
