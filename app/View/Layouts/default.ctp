@@ -59,3 +59,85 @@ $cakeDescription = __d('cake_dev', 'Life and ideas of Revolutionary Bhagat Singh
 		jQuery('#submitButton').pointPoint();
 	});
 </script>
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52a371555c3f3e89"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5
+    }, 
+    'follow' : {
+      'services' : [
+        {'service': 'facebook', 'id': 'revlutionary.bhagatsingh'},
+        {'service': 'youtube', 'id': 'revolutionarybhagat'}
+      ]
+    },  
+    'whatsnext' : {},  
+    'recommended' : {} 
+  });
+</script>
+<!-- AddThis Smart Layers END -->
+<!-- AddThis Welcome BEGIN -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52a371555c3f3e89"></script>
+<script type='text/javascript'>
+addthis.bar.initialize({'default':{
+	"backgroundColor": "#DED8F0",
+	"buttonColor": "#098DF4",
+	"textColor": "#000000",
+	"buttonTextColor": "#FFFFFF"
+},rules:[
+	{
+		"name": "AnyOther",
+		"message": "If you enjoy this page, do us a favor:",
+		"action": {
+			"type": "button",
+			"text": "Share this page",
+			"verb": "share",
+			"service": "preferred"
+		}
+	},
+	{
+		"name": "Twitter",
+		"match": {
+			"referringService": "twitter"
+		},
+		"message": "If you find this page helpful:",
+		"action": {
+			"type": "button",
+			"text": "Tweet it!",
+			"verb": "share",
+			"service": "twitter"
+		}
+	},
+	{
+		"name": "Facebook",
+		"match": {
+			"referringService": "facebook"
+		},
+		"message": "Tell your friends about us:",
+		"action": {
+			"type": "button",
+			"text": "Share on Facebook",
+			"verb": "share",
+			"service": "facebook"
+		}
+	},
+	{
+		"name": "Google",
+		"match": {
+			"referrer": "google.com"
+		},
+		"message": "If you like this page, let Google know:",
+		"action": {
+			"type": "button",
+			"text": "+1",
+			"verb": "share",
+			"service": "google_plusone_share"
+		}
+	}
+]});
+</script>
+<!-- AddThis Welcome END -->
