@@ -1,7 +1,7 @@
 <meta property="og:title" content="Revolutionary Bhagat Singh Quotes"/>
 <meta property="og:image" content="http://www.revolutionarybhagatsingh.com/img/gallery/images(386)"/>
 <meta property="og:site_name" content="http://www.revolutionarybhagatsingh.com"/>
-<meta property="og:description" content="<?php echo str_replace('\n', ' ', $current['Quotes']['quote'] );?>"/>
+<meta property="og:description" content="<?php echo str_replace( '"', ' ' , str_replace('\n', ' ', $current['Quotes']['quote'] ) );?>"/>
 <div class="well well-small">
 	<h2>Bhagat Singh Quote <a href="<?php echo $this->Xyz->u('quotes', 'add');?>" class="btn btn-primary pull-right" >Add Some Quote</a></h2>
 </div>
