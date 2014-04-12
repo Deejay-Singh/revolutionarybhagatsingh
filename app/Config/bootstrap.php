@@ -128,7 +128,7 @@ function myRand($min, $max, $quantity = 1 ) {
 
 CakePlugin::load('Facebook');
 CakePlugin::load('Mongodb');
-CakePlugin::load('DebugKit');
+//CakePlugin::load('DebugKit');
 
 define( 'MOOD_HAPPY', 1 );
 define( 'MOOD_OK', 2 );
